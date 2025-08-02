@@ -1,0 +1,21 @@
+{
+  "name": "pseudo-js",
+  "version": "1.0.0",
+  "description": "AI-assisted code generation using stack trace context",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "mkdir -p dist && cp index.js dist/ && cp index.d.ts dist/",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ai", "code-generation", "pseudo", "llm"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
