@@ -199,27 +199,6 @@ async function pseudo(specification, ...args) {
     
     // Create execution context with common utilities and the arguments
     const executionCode = `
-      // Common utility functions
-      function factorial(n) {
-        if (n <= 1) return 1;
-        return n * factorial(n - 1);
-      }
-      
-      function fibonacci(n) {
-        if (n <= 1) return n;
-        return fibonacci(n - 1) + fibonacci(n - 2);
-      }
-      
-      function isPrime(n) {
-        if (n <= 1) return false;
-        if (n <= 3) return true;
-        if (n % 2 === 0 || n % 3 === 0) return false;
-        for (let i = 5; i * i <= n; i += 6) {
-          if (n % i === 0 || n % (i + 2) === 0) return false;
-        }
-        return true;
-      }
-      
       // Extract arguments for easy access
       const [${args.map((_, i) => `arg${i}`).join(', ')}] = args;
       
