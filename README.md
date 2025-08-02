@@ -5,7 +5,7 @@ AI-assisted code generation using stack trace context. Generate JavaScript code 
 ## Installation
 
 ```bash
-npm install pseudo-js
+npm install @tluyben/pseudo-js
 ```
 
 ## Setup
@@ -25,7 +25,7 @@ OPENROUTER_PROVIDER=
 ## Usage
 
 ```javascript
-const pseudo = require('pseudo-js');
+const pseudo = require('@tluyben/pseudo-js');
 
 // Basic usage
 const result = await pseudo("calculate the fibonacci number for n=10");
