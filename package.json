@@ -1,5 +1,5 @@
 {
-  "name": "pseudo-js",
+  "name": "@tluyben/pseudo-js",
   "version": "1.0.0",
   "description": "AI-assisted code generation using stack trace context",
   "main": "dist/index.js",
@@ -13,9 +13,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["ai", "code-generation", "pseudo", "llm"],
-  "author": "",
+  "author": "@tluyben",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
